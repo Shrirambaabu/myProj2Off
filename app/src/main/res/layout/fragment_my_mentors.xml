@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mentee_view">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_card_selected"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/mSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:defaultQueryHint="Search all Contacts"
+            app:queryHint="Search all Contacts" />
+
+        <!-- <ImageView
+             android:id="@+id/search_icon"
+             android:layout_width="36dp"
+             android:layout_height="36dp"
+             android:layout_marginStart="8dp"
+             android:paddingBottom="8dp"
+             android:paddingTop="8dp"
+             android:src="@drawable/search" />
+
+         <EditText
+             android:id="@+id/search_contacts"
+             android:layout_width="wrap_content"
+             android:layout_height="36dp"
+             android:layout_marginEnd="16dp"
+             android:layout_marginStart="8dp"
+             android:background="@null"
+             android:hint="Search all contacts"
+             android:padding="4dp"
+             android:textColor="@color/white"
+             android:textColorHint="@color/white"
+             android:textSize="16sp"
+             android:backgroundTint="@android:color/transparent" />-->
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/skill_container_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/topLayout"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/bg_card_selected" />
+
+
+    <ImageView
+        android:id="@+id/skill_dots"
+        android:layout_width="28dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/topLayout"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/bg_card_selected"
+        android:padding="@dimen/margin_2"
+        android:src="@drawable/ic_more_vert_black_24dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_mentors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/skill_container_scroll">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+

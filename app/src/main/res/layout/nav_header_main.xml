@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/upcoming_events"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:id="@+id/header"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"><!--
+
+    <cn.lankton.anyshape.AnyshapeImageView
+        android:id="@+id/image_view_profile_pic"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_above="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/rotate_hex_orange"
+        app:anyshapeMask="@drawable/rotate_hex_orange" />-->
+
+    <com.conext.ui.custom.HexagonMaskView
+        android:id="@+id/image_view_profile_pic"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"/>
+
+
+<TextView
+    android:id="@+id/name"
+    android:paddingTop="16dp"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:paddingStart="4dp"
+    android:text="kvelmurugan@gmail.com"/>
+
+</RelativeLayout>

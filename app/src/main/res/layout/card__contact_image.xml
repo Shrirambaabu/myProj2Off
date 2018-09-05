@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.conext.ui.custom.HexagonMaskView
+        android:id="@+id/add_contact_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop" />
+
+    <!-- <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+         android:id="@+id/add_contact_image"
+         android:layout_width="48dp"
+         android:layout_height="48dp"
+         android:layout_margin="4dp"
+         app:siBorderColor="@color/black"
+         app:siBorderWidth="16dp"
+         app:siShape="@drawable/black_network_hex"
+         app:siSquare="true"  />-->
+
+</LinearLayout>

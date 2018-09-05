@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/location_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/location_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            android:src="@drawable/location" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="4dp"
+                android:text="Loading..."
+                android:textColor="@color/header_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="4dp"
+                android:text="Location"
+                android:textColor="@color/sub_header_black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/info_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_linear"
+        android:clipToPadding="false"
+        android:divider="@color/bg_card"
+        android:dividerHeight="2dp"
+        android:scrollbars="vertical" />
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/add_edu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_mode_plus_24dp" />
+
+            <TextView
+                android:id="@+id/add_text"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="Add Info"
+                android:textAlignment="center"
+                android:textColor="@color/dia_text"
+                android:textSize="20sp" />
+
+        </LinearLayout>-->
+
+</RelativeLayout>

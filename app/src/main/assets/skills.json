@@ -1,0 +1,85 @@
+[
+  {
+    "skill_category_name": "Technology",
+    "skills": [
+      {
+        "skill_name": "Java",
+        "skill_id": "1"
+      },
+      {
+        "skill_name": ".NET",
+        "skill_id": "2"
+      },
+      {
+        "skill_name": "Web Services",
+        "skill_id": "3"
+      },
+      {
+        "skill_name": "HTML5",
+        "skill_id": "4"
+      },
+      {
+        "skill_name": "WebApplications",
+        "skill_id": "5"
+      },
+      {
+        "skill_name": "Database",
+        "skill_id": "6"
+      },
+      {
+        "skill_name": "J2EE",
+        "skill_id": "7"
+      },
+      {
+        "skill_name": "Cloud Computing",
+        "skill_id": "8"
+      },
+      {
+        "skill_name": "Java Script",
+        "skill_id": "9"
+      }
+    ]
+  },
+  {
+    "skill_category_name": "Hobby",
+    "skills": [
+      {
+        "skill_name": "Cycling",
+        "skill_id": "10"
+      },
+      {
+        "skill_name": "Painting",
+        "skill_id": "11"
+      },
+      {
+        "skill_name": "Fitness",
+        "skill_id": "12"
+      },
+      {
+        "skill_name": "Motor Bikes",
+        "skill_id": "13"
+      }
+    ]
+  },
+  {
+    "skill_category_name": "Enterprenership",
+    "skills": [
+      {
+        "skill_name": "Startup",
+        "skill_id": "14"
+      },
+      {
+        "skill_name": "Pitching",
+        "skill_id": "15"
+      },
+      {
+        "skill_name": "Invettor",
+        "skill_id": "16"
+      },
+      {
+        "skill_name": "Motor Bikes",
+        "skill_id": "17"
+      }
+    ]
+  }
+]

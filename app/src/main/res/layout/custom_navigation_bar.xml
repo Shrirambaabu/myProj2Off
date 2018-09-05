@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/upcoming_events"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"><!--
+
+    <cn.lankton.anyshape.AnyshapeImageView
+        android:id="@+id/image_view_profile_pic"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_above="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/rotate_hex_orange"
+        app:anyshapeMask="@drawable/rotate_hex_orange" />-->
+
+            <com.conext.ui.custom.HexagonMaskView
+                android:id="@+id/image_view_profile_pic"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerCrop" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingStart="4dp"
+                android:paddingTop="16dp"
+                android:text="kvelmurugan@gmail.com"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/network_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/header"
+            android:layout_margin="@dimen/margin_8"
+            android:src="@drawable/net_menu" />
+
+        <TextView
+            android:id="@+id/network_view_text"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/header"
+            android:layout_margin="@dimen/margin_8"
+            android:textColor="@color/decline_accept"
+            android:layout_toEndOf="@+id/network_menu"
+            android:gravity="center|start"
+            android:text="Network View"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/event_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/network_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:src="@drawable/event_menu" />
+
+        <TextView
+            android:id="@+id/events_text"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center|start"
+            android:text="Events"
+            android:textSize="16sp"
+            android:textColor="@color/decline_accept"
+            android:layout_margin="@dimen/margin_8"
+           android:layout_toEndOf="@+id/event_menu"
+            android:layout_below="@+id/network_menu"/>
+
+        <ImageView
+            android:id="@+id/my_event_menu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/event_menu"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="@dimen/margin_8"
+            android:src="@drawable/cc_connect" />
+
+        <TextView
+            android:id="@+id/my_event_text"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/event_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_toEndOf="@+id/my_event_menu"
+            android:gravity="center|start"
+            android:text="My Events"
+            android:textColor="@color/decline_accept"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/my_mentee_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/my_event_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:src="@drawable/mentees_menu" />
+
+        <TextView
+            android:id="@+id/my_mentee_text"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/my_event_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_toEndOf="@+id/my_mentee_menu"
+            android:gravity="center|start"
+            android:text="My Mentees"
+            android:textColor="@color/decline_accept"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/my_mentor_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/my_mentee_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:src="@drawable/mentors_menu" />
+
+        <TextView
+            android:id="@+id/my_mentor_text"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/my_mentee_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_toEndOf="@+id/my_mentor_menu"
+            android:gravity="center|start"
+            android:text="My Mentees"
+            android:textColor="@color/decline_accept"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/group_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/notify_view"
+            android:layout_below="@+id/alumni_menu" />
+
+        <TextView
+            android:id="@+id/alumni_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_mentor_text"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="My Alumni"
+            android:textColor="@color/dia_text_con"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/univ_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/alumni_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:src="@drawable/book" />
+
+        <TextView
+            android:id="@+id/univ_text"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/alumni_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_toEndOf="@+id/univ_menu"
+            android:maxLines="2"
+            android:textColor="@color/decline_accept"
+            android:text="nsgaagnangadavfafvafvavaavagrargargaarggraargvvavav avavavavavgna"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/study_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/study"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_below="@+id/univ_menu"
+           />
+
+        <TextView
+            android:id="@+id/study_text"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/univ_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_toEndOf="@+id/study_menu"
+            android:maxLines="2"
+            android:textColor="@color/decline_accept"
+            android:text="nsgaagnangadavfafvafvavaavavvavav avavavavavgna"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/year_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/study_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:src="@drawable/study" />
+
+        <TextView
+            android:id="@+id/year_text"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/study_menu"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_toEndOf="@+id/year_menu"
+            android:gravity="center|start"
+            android:maxLines="1"
+            android:text="vavavgna"
+            android:textColor="@color/decline_accept"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/group_two"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/notify_view"
+            android:layout_below="@+id/year_menu" />
+
+        <TextView
+            android:id="@+id/create_event_text"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/group_two"
+         android:layout_margin="@dimen/margin_16"
+            android:gravity="center|start"
+            android:textColor="@color/decline_accept"
+            android:text="Create An Event"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/create_mentorship_text"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/create_event_text"
+            android:gravity="center|start"
+            android:maxLines="1"
+            android:layout_margin="@dimen/margin_16"
+            android:textColor="@color/decline_accept"
+            android:text="Create A Mentorship Program"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

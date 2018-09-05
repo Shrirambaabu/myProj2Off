@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/major_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/call_img"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/icon_book" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="8dp"
+                android:text="Strategy"
+                android:textColor="@color/header_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/majorSpecial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="8dp"
+                android:text="Major Specialisation"
+                android:textColor="@color/sub_header_black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/call_img2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/icon_book" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/edu_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="8dp"
+                android:text="MBA, International Business"
+                android:textColor="@color/header_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="8dp"
+                android:text="Education"
+                android:textColor="@color/sub_header_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/univ_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:text="Kellog School of management"
+            android:textColor="@color/header_black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/university"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:text="University"
+            android:textColor="@color/sub_header_black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:text="2007-2009"
+            android:textColor="@color/header_black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/graduation_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:text="Graduation Year"
+            android:textColor="@color/sub_header_black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.5"
+        android:background="@color/black" />
+
+</LinearLayout>

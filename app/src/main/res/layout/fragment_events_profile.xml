@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card"
+    android:orientation="vertical"
+    tools:context="com.conext.ui.Fragments.Events">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/event_attend_prof"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/event_attended" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:text="Events Attended"
+                android:textColor="@color/type_event"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/event_prof_attended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/event_coffee_prof"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/cc_connect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:text="Coffee Connect"
+                android:textColor="@color/type_event"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/event_coffee_attended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/event_lunch_prof"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/cc_connect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:padding="4dp"
+                android:text="Lunch Meet"
+                android:textAlignment="center"
+                android:textColor="@color/type_event"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/event_lunch_attended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/event_alumini_prof"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/cc_connect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:padding="4dp"
+                android:text="Alumni Meets"
+                android:textAlignment="center"
+                android:textColor="@color/type_event"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/event_alumni_meet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/event_mentor_prof"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/cc_connect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:padding="4dp"
+                android:text="Mentor \n ship Sessions"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/type_event"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/event_prof_ship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/events_attended_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Events Attended"
+        android:textColor="@color/bg_white"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/bg_card"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

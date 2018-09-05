@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/network_view"
+            android:icon="@drawable/net_menu"
+            android:title="@string/network_view" />
+        <item
+            android:id="@+id/event"
+            android:icon="@drawable/event_menu"
+            android:title="@string/events">
+
+        </item>
+
+        <item
+            android:id="@+id/my_event"
+            android:title="       My Events"
+            android:icon="@drawable/event_my" />
+
+        <item
+            android:id="@+id/my_mentees"
+            android:icon="@drawable/mentees_menu"
+            android:title="@string/my_mentees" />
+        <item
+            android:id="@+id/my_mentors"
+            android:icon="@drawable/mentors_menu"
+            android:title="@string/my_mentors" />
+
+
+    </group>
+
+    <item
+        android:id="@+id/alumini"
+        android:title="@string/my_alumini">
+        <menu>
+            <item
+                android:id="@+id/university_menu"
+                android:icon="@drawable/book"
+                android:enabled="false"
+                android:title="Kellog School of management" />
+            <item
+                android:id="@+id/education_strategy"
+                android:icon="@drawable/study"
+                android:enabled="false"
+                android:title="MBA, International Business" />
+            <item
+                android:id="@+id/menu_year"
+                android:icon="@drawable/study"
+                android:enabled="false"
+                android:title="2007 - 2009" />
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/create_event"
+            android:title="@string/create_an_event" />
+
+        <item
+            android:id="@+id/create_mentorship"
+            android:title="@string/create_a_mentorship_program" />
+
+    </group>
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/bac"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:alpha="0.9"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cofe"
+        app:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/black_image"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:alpha="0.4"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Meet and Great asas"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/event_type"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/event_name"
+        android:layout_below="@+id/event_date"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="Coffee Connect | Python"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/event_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/event_type"
+        android:gravity="end"
+        android:text="15 - 16"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/event_month"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/event_date"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_toRightOf="@id/event_type"
+        android:gravity="end"
+        android:text="Feb   Feb"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/event_more"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/event_month"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_more_vert_black_24dp" />
+
+</RelativeLayout>
